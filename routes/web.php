@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // Doesn't Required to write full name of the file
+    // hello.blade.php
+    return view('hello');
 });
