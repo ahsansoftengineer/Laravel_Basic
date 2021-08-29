@@ -88,12 +88,12 @@ class Users extends Controller
 ```
 3. Display Error beneath the Text Fields
 ```php
-    <tr>
-        <td>Name</td>
-        <td> <input name="name" type="text" /> </td>
-    </tr>
-    <tr>
-        <td></td>
-        <td><span>@error('name'){{ $message }} @enderror</span></td>
-    </tr>
+<tr>
+    <td>Name</td>
+    <td> <input name="name" type="text" /> </td>
+</tr>
+<tr>
+    <td></td>
+    <td><span>@error('name'){{ $message }} @enderror</span></td>
+</tr>
 ```
