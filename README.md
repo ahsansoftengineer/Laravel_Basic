@@ -1,8 +1,8 @@
 # Routing
 ## How to Change Routes in Laravel?
 ### Folders & Files Involved in Routing
-> resources>views>**welcome.blade.php**
-> resources>routes>**web.php**
+> resources>views>**welcome.blade.php** 
+> resources>routes>**web.php** 
 > **Note:** *.blade.php* Doesn't needs to be include in URL
 
 1. Default Page Routing
