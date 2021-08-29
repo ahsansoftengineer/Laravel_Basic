@@ -2,19 +2,28 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
+// 1 Default & Pre define Routes of Laravel
 Route::get('/', function () {
-    // Doesn't Required to write full name of the file
-    // hello.blade.php
-    return view('hello');
+    return view('welcome');
+});
+// 2 Routes with Path
+Route::get("_1", function () {
+    return view('_1');
+});
+// 3 Short Hand Syntax
+Route::view('_2', '_2');
+// 4 Parameterized Routes
+Route::get("/_3/{name}", function ($name) {
+    // Echo in Route File
+    echo $name;
+    // Passing Data to View
+    return view('_3', ['name' => $name]);
+});
+// 4 Redirect Page
+Route::get("/_4", function () {
+    return redirect('_5');
+});
+// 5 Redirect Page
+Route::get("/_5", function () {
+    return view('_5');
 });
