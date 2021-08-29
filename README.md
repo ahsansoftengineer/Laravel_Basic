@@ -54,3 +54,46 @@ class Users extends Controller
   "password": "ahsan"
 }
 ```
+## How to Implement Validation in Forms
+> Controller is to handle the ***POST*** request
+> and then Validate as mentioned
+```php
+class Users extends Controller
+{
+    function getView(Request $req){
+        $req->validate([
+            'name' => 'required | max:15 | min:7',
+            'password' => 'required | min:8 | max:21'
+        ]);
+        return $req->input();
+
+    }
+}
+```
+## What are the Ways of Displaying Error Message in the Form
+> When a Form is Submitted then Controller can validate it and return the response with error if any
+1. To Display All the Errors availaible
+```php
+    {{ $errors }}
+```
+2. iterate over all the errors
+```php
+<ol>
+    @if($errors->any())
+        @foreach($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+    @endif
+</ol>
+```
+3. Display Error beneath the Text Fields
+```php
+    <tr>
+        <td>Name</td>
+        <td> <input name="name" type="text" /> </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><span>@error('name'){{ $message }} @enderror</span></td>
+    </tr>
+```
