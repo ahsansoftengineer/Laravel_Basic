@@ -58,7 +58,7 @@
 
 ### What are the Files and Folder Structure of Laravel Project?
 ### Introduction
-> The default Laravel application structure is intended to provide a great starting point for both large and small applications. But you are free to organize your application however you like. Laravel imposes almost no restrictions on where any given class is located - as long as Composer can autoload the class. (Laravel Directory Structure)[https://laravel.com/docs/8.x/structure]
+> The default Laravel application structure is intended to provide a great starting point for both large and small applications. But you are free to organize your application however you like. Laravel imposes almost no restrictions on where any given class is located - as long as Composer can autoload the class. [Laravel Directory Structure](https://laravel.com/docs/8.x/structure)
 ### Root
 > app : *The app directory contains the core code of your application*
 ### bootstrap : 
