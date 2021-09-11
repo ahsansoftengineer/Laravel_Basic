@@ -11,6 +11,15 @@
 ## CLI to generate User Model
 > *php artisan make:model User*
 ## Implementation
+> Database Configuration
+```javascript
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3307
+DB_DATABASE=learn_laravel
+DB_USERNAME=root
+DB_PASSWORD=
+```
 > What is the Syntax of Model Created by CLI
 ```php
 namespace App\Models;
